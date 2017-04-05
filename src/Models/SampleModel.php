@@ -9,5 +9,5 @@ use Illuminate\Database\Eloquent\Model;
 */
 class SampleModel extends Model
 {
-	// Your Model
+	protected $table = 'banner';
 }
