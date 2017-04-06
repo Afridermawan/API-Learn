@@ -7,7 +7,7 @@ namespace App\Controllers;
 */
 abstract class Controller
 {
-    private $container;
+    protected $container;
     protected $model;
 
     /**
@@ -16,7 +16,7 @@ abstract class Controller
     public function __construct($container)
     {
         $this->container = $container;
-        $this->model     = new GetModel;
+        $this->model     = new \App\Models\GetModel;
     }
 
     /**

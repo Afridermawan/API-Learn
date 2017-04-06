@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Models;
 
 /**
 * 
@@ -10,7 +10,7 @@ class GetModel
 	public $model;
 	
 	/**
-	* 
+	* Dynamically access model
 	*/
 	public function __get($model)
 	{
