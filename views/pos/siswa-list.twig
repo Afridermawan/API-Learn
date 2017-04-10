@@ -1,0 +1,7 @@
+{% block title %} Home | Siswa {% endblock %}
+
+{% block content %}
+    {% for siswa in siswa %}
+        <p>{{ siswa.name }}-{{ siswa.jurusan.prodi }}</p>
+    {% endfor %}
+{% endblock %}

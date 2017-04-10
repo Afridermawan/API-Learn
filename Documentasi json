@@ -1,0 +1,84 @@
+Documentasi json
+
+POST
+
+{
+  "status": 200,
+  "message": "Berhasil Menambah Data Siswa",
+  "data": {
+    "name": "iqbal",
+    "prodi_id": "2",
+    "id": 6
+  }
+}
+
+GET
+
+{
+  "status": 200,
+  "message": "Berhasil Mengambil Data Siswa",
+  "data": [
+    {
+      "id": 1,
+      "name": "afri dermawan ginting",
+      "prodi_id": 1,
+      "deleted": 1
+    },
+    {
+      "id": 2,
+      "name": "randy firmansyah",
+      "prodi_id": 2,
+      "deleted": 1
+    },
+    {
+      "id": 3,
+      "name": "rani santia mika",
+      "prodi_id": 2,
+      "deleted": 0
+    },
+    {
+      "id": 4,
+      "name": "indra endang",
+      "prodi_id": 1,
+      "deleted": 0
+    },
+    {
+      "id": 5,
+      "name": "indra mahadaya",
+      "prodi_id": 3,
+      "deleted": 0
+    },
+    {
+      "id": 6,
+      "name": "iqbal",
+      "prodi_id": 2,
+      "deleted": 0
+    }
+  ]
+}
+
+PUT
+
+{
+  "status": 200,
+  "message": "Berhasil Mengedit Data Siswa",
+  "data": {
+    "id": 4,
+    "name": "mendi firmansyah",
+    "prodi_id": "2",
+    "deleted": 0
+  }
+}
+
+DELETE
+
+{
+  "status": 200,
+  "message": "Berhasil Menghapus Data Siswa",
+  "data": {
+    "id": 2,
+    "name": "randy firmansyah",
+    "prodi_id": 2,
+    "deleted": 1
+  }
+}
